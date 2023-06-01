@@ -11,3 +11,50 @@
 .homebackground {
   width: 100vw;
 }
+
+#toggle {
+  display: none;
+}
+
+.hamburger {
+  position: absolute;
+  right: 13px;
+  height: 45px;
+  z-index: 5;
+  top: 6px;
+  cursor: pointer;
+}
+
+.hamburger div {
+  position: relative;
+  width: 35px;
+  height: 4px;
+  border-radius: 3px;
+  background-color: black;
+  margin-top: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+#toggle:checked + .hamburger .top-bun {
+  transform: rotate(-45deg);
+  margin-top: 20px;
+}
+
+#toggle:checked + .hamburger .bottom-bun {
+  opacity: 0;
+  transform: rotate(45deg);
+}
+
+#toggle:checked + .hamburger .meat {
+  transform: rotate(45deg);
+  margin-top: -4px;
+}
+
+#toggle:checked + .hamburger + .nav-mobile {
+  top: 0;
+  transform: scale(1);
+}
+
+#toggle:checked + .hamburger {
+  position: fixed;
+}
