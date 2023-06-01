@@ -1,13 +1,13 @@
 * {
-    font-family: 'Open Sans', sans-serif;
-    margin: 0 0;
+  font-family: "Open Sans", sans-serif;
+  margin: 0 0;
 }
 
 .home {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .homebackground {
-    width: 100vw;
+  width: 100vw;
 }
