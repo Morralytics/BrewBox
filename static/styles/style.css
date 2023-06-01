@@ -11,6 +11,7 @@
 
 .homebackground {
     width: 100%;
+    position: fixed;
 }
 
 .nav-box {
@@ -171,3 +172,53 @@ padding-top: 70px;
     font-size: 2.7em;
     font-weight: 100;
 }
+
+.downarrow {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.explore {
+    position: fixed;
+    bottom: -100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.downarrow:hover {
+    cursor: pointer;
+}
+
+.downarrow:hover ~ .explore{
+    bottom: 60px;
+}
+
+.explore:hover {
+    bottom: 60px;
+    cursor: pointer;
+}
+
+/* #toggle:checked + .hamburger .top-bun {
+    transform: rotate(-45deg);
+    margin-top: 20px;
+  }
+  
+  #toggle:checked + .hamburger .bottom-bun {
+    opacity: 0;
+    transform: rotate(45deg);
+  }
+  
+  #toggle:checked + .hamburger .meat {
+    transform: rotate(45deg);
+    margin-top: -4px;
+  }
+  
+  #toggle:checked + .hamburger + .nav {
+    transform: scale(1);
+    top: 0;
+    right: 0;
+  } */
