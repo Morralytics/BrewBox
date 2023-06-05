@@ -1,3 +1,4 @@
 const Blend = require('./Blend');
+const User = require('./User');
 
-module.exports = { Blend };
+module.exports = { Blend, User };
