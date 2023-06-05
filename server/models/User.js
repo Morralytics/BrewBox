@@ -43,7 +43,13 @@ userSchema.pre('save', async function(next) {
     }
 
     next();
-})
+});
+
+// Adding a method to the user schema which will compare a password given to the password set to the user
+// This will be used in the resolver directory to handle login authentication
+userSchema.methods.isCorrectPassword = async function(password) {
+    return bcrypt.compare(password, this.password);
+};
 
 const User = model('User', userSchema);
 
