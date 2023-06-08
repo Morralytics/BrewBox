@@ -14,11 +14,11 @@ export default function Header() {
                     <div class="nav-wrapper">
                         <div class="links">
                             <ul>
-                                <li><a href="">HOME</a></li>
-                                <li><a href="">BREWS</a></li>
-                                <li><a href="">ABOUT US</a></li>
-                                <li><a href="">CONTACT US</a></li>
-                                <li><a href="">LOGIN</a></li>
+                                <li><a href="home">HOME</a></li>
+                                <li><a href="brews">BREWS</a></li>
+                                <li><a href="aboutus">ABOUT US</a></li>
+                                <li><a href="contactus">CONTACT US</a></li>
+                                <li><a href="login">LOGIN</a></li>
                                 <li><button class="btn">CART</button></li>
                             </ul>
                         </div>
